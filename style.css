@@ -1,0 +1,91 @@
+@import url("https://fonts.google.com/specimen/Lexend+Deca");
+@import url("https://fonts.google.com/specimen/Big+Shoulders+Display");
+
+:root {
+    --bright-orange: hsl(31, 77%, 52%); 
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+  }
+body{
+    font-family: "Big Shoulders Display", sans-serif;
+    color: #ffffff;
+    margin: 25%;
+}
+
+h1{
+    font-family: "Lexend Deca", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: -2px;
+}
+
+.flex-container{
+    display: flex;
+}
+
+.flex-element{
+    padding:5%;
+    line-height: 1.5em;
+}
+.flex-element:nth-child(1){
+    background-color: var(--bright-orange);
+}
+
+.flex-element:nth-child(2){
+    background-color: var(--dark-cyan);
+}
+
+.flex-element:nth-child(3){
+    background-color: var(--very-dark-cyan);
+}
+
+.flex-element button{
+    background-color: #ffffff;
+    margin-top: 35%;
+    margin-bottom: 15%;
+    border-radius: 2rem;
+    height: 15%;
+    max-width: 80%;
+    min-width: 60%;
+}
+.flex-element:nth-child(1) button{
+    color: var(--bright-orange);
+}
+.flex-element:nth-child(2) button{
+    color: var(--dark-cyan);
+}
+
+.flex-element:nth-child(3) button{
+    color: var(--very-dark-cyan);
+}
+
+.flex-element button:hover{
+    background: transparent;
+    border: 2px solid #FFFFFF;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+@media (max-width: 768px){
+    .flex-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .flex-element{
+        padding: 10%;
+    } 
+
+    .flex-element button{
+        margin-top: 10%;
+    }
+}
+
+.attribution { 
+    margin-top: 20px;
+    font-size: 11px; 
+    text-align: center; 
+    color: #000000;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
