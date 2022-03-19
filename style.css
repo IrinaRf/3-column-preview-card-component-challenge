@@ -44,8 +44,7 @@ h1{
     margin-bottom: 15%;
     border-radius: 2rem;
     height: 15%;
-    max-width: 80%;
-    min-width: 60%;
+    width: 80%;
 }
 .flex-element:nth-child(1) button{
     color: var(--bright-orange);
@@ -77,6 +76,7 @@ h1{
 
     .flex-element button{
         margin-top: 10%;
+        width: 60%;
     }
 }
 
